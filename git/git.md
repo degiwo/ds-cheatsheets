@@ -10,6 +10,13 @@ git clone https://github.com/degiwo/mlops.git
 git branch own-feature-branch
 ```
 
+## Pull from Remote and keep local uncommited changes
+```sh
+git stash
+git pull
+git stash pop
+```
+
 ## Rebase feature branch from main
 ```sh
 git checkout main
