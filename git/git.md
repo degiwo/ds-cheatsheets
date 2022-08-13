@@ -19,6 +19,7 @@ git stash pop
 
 ## Rebase feature branch from main
 ```sh
+# USE THIS ONLY FOR LOCAL BRANCHES!!!
 git checkout main
 git pull
 git checkout feature-branch
