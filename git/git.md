@@ -10,6 +10,12 @@ git clone https://github.com/degiwo/mlops.git
 git branch own-feature-branch
 ```
 
+## Fetch and merge instead of pull
+```sh
+git fetch
+git merge
+```
+
 ## Pull from Remote and keep local uncommited changes
 ```sh
 git stash
