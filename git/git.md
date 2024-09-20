@@ -11,9 +11,9 @@ git branch own-feature-branch
 ```
 
 ## Graph
-``sh
+```sh
 git log --all --decorate --oneline --graph
-``
+```
 
 ## Fetch and merge instead of pull
 ```sh
