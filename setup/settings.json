@@ -1,0 +1,79 @@
+{
+    "window.newWindowProfile": "Default",
+    "window.restoreWindows": "none",
+
+    "editor.minimap.enabled": false,
+    // "editor.fontSize": 13,
+    "editor.scrollBeyondLastLine": false,
+    
+    "workbench.editor.enablePreview": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.tree.indent": 18,
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.list.smoothScrolling": true,
+    
+    "explorer.autoReveal": false,
+    // "terminal.integrated.cursorBlinking": true,
+
+    "extensions.ignoreRecommendations": true,
+
+    "python.locator": "js",
+    "jupyter.interactiveWindow.textEditor.executeSelection": true,
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
+    "interactiveWindow.executeWithShiftEnter": true,
+
+    "gitlens.views.commitDetails.files.layout": "list",
+    "gitlens.graph.layout": "editor",
+    "gitlens.hovers.avatars": false,
+    "gitlens.hovers.currentLine.details": false,
+    
+    "git-graph.repository.onLoad.scrollToHead": true,
+
+    "tabnine.experimentalAutoImports": true,
+    "tabnine.codeLensEnabled": false,
+    "tabnine.debounceMilliseconds": 100,
+
+    // "vim.disableExtension": true,
+    "vim.smartRelativeLine": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": false,
+
+    "terminal.integrated.defaultProfile.windows": "Ubuntu-22.04 (WSL)",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Ubuntu-22.04 (WSL)": {
+            "path": "C:\\WINDOWS\\System32\\wsl.exe",
+            "args": [
+                "-d",
+                "Ubuntu-22.04"
+            ]
+        }
+    },
+
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+}
