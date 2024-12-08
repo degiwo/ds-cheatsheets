@@ -20,7 +20,7 @@ set showcmd
 " raise a dialogue if you wish to save changed files
 set confirm
 
-# Display relative line number
+" Display relative line number
 set number relativenumber
 
 " Always display the status line even if only one window is displayed
