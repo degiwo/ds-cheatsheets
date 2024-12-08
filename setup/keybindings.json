@@ -1,0 +1,84 @@
+// Place your key bindings in this file to override the defaults
+[    
+    // Toggle between terminal and editor focus
+    {
+        "key": "cmd+[Semicolon]",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "cmd+[Semicolon]",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+
+    // discard all unsaved changes of file
+    {
+        "key": "ctrl+r",
+        "command": "workbench.action.files.revert"
+    },
+
+    // jump to end/beginning of bracket
+    {
+        "key": "ctrl+shift+down",
+        "command": "editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+cmd+7",
+        "command": "-editor.action.jumpToBracket",
+        "when": "editorTextFocus"
+    },
+
+    // Send code to Interactive Jupyter Window
+    {
+        "key": "shift+cmd+enter",
+        "command": "editor.debug.action.selectionToRepl"
+    },
+    // open in Data Wrangler in Interactive Jupyter Window
+    {
+        "key": "shift+cmd+v",
+        "command": "dataWrangler.openNotebookVariable",
+        //"when": "isWorkspaceTrusted && !notebookKernel || isWorkspaceTrusted && notebookKernel =~ /^ms-toolsai.jupyter\\//"
+        "when": "interactiveWindowOpen && notebookKernel =~ /^ms-toolsai.jupyter\\//"
+    },
+
+    // open git graph
+    {
+        "key": "ctrl+alt+g",
+        "command": "git-graph.view"
+    },
+
+    // toggle comment
+    {
+        "key": "ctrl+shift+7",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+
+    // go back/forward
+    {
+        "key": "ctrl+oem_2",
+        "command": "-editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+oem_minus",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "alt+left",
+        "command": "-workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "ctrl+shift+oem_minus",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    {
+        "key": "alt+right",
+        "command": "-workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+]
