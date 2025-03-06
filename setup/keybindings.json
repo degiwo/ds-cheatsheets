@@ -81,4 +81,12 @@
         "command": "-workbench.action.navigateForward",
         "when": "canNavigateForward"
     },
+    {
+        "key": "ctrl+win+down",
+        "command": "workbench.action.terminal.resizePaneDown"
+    },
+    {
+        "key": "ctrl+win+up",
+        "command": "workbench.action.terminal.resizePaneUp"
+    },
 ]
