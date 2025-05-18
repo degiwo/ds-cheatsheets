@@ -8,7 +8,7 @@ https://github.com/zk-org/zk
   * coc
 
 ```zsh
-# in .vimrc
+# .vimrc
 call plug#begin("~/.vim/plugged")
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -24,7 +24,8 @@ brew install zk
 
 ## Config
 ```zsh
-# ~/.config/zk/config.toml
+# <notebook>/.zk/config.toml
+# or globally: ~/.config/zk/config.toml
 [group.daily]
 paths = ["journal/daily"]
 [group.daily.note]
@@ -34,6 +35,7 @@ template = "daily.md"
 
 ## coc settings
 ```zsh
+# .vim/coc-settings.json
 {
   // Important, otherwise link completion containing spaces and other special characters won't work.
   "suggest.invalidInsertCharacters": [],
