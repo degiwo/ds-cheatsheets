@@ -15,8 +15,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 call plug#end()
 
-" Verwende gd für 'go to definition' mit coc.nvim
+" Verwende gd für 'go to definition' und 'go to references' mit coc.nvim
 nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gr <Plug>(coc-references)
 ```
 * then in vim: `:PlugInstall`
 
