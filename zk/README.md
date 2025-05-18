@@ -14,6 +14,9 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 call plug#end()
+
+" Verwende gd für 'go to definition' mit coc.nvim
+nmap <silent> gd <Plug>(coc-definition)
 ```
 * then in vim: `:PlugInstall`
 
@@ -46,6 +49,9 @@ template = "daily.md"
       "args": ["lsp"],
       "trace.server": "messages",
       "filetypes": ["markdown"],
+      // important to be able to use 'gd'
+      "rootPatterns": [".zk"],
+      "trace.server": "verbose"
     },
   },
 }
