@@ -8,6 +8,7 @@ https://github.com/zk-org/zk
   * coc
 
 ```zsh
+# in .vimrc
 call plug#begin("~/.vim/plugged")
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
