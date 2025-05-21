@@ -44,6 +44,27 @@ require("lazy").setup({
       })
     end,
   },
+
+  -- Treesitter für Markdown-Hervorhebung
+  {
+    "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
+    config = function()
+      require("nvim-treesitter.configs").setup({
+        ensure_installed = { "markdown", "markdown_inline", "lua", "vim" },
+        highlight = { enable = true },
+      })
+    end,
+  },
+
+  -- Telescope-Suche
+  {
+    "nvim-telescope/telescope.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    config = function()
+      require("telescope").setup({})
+    end,
+  },
 })
 ```
 
