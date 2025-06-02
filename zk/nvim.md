@@ -254,6 +254,8 @@ vim.opt.shiftwidth = 4
 local map = vim.keymap.set
 map("n", "gd", vim.lsp.buf.definition)
 map("n", "gr", vim.lsp.buf.references)
+map("n", "<leader>fb", "<cmd>lua require('fzf-lua').buffers()<CR>")
+
 
 vim.api.nvim_create_user_command("ZkFind", function()
 	require("fzf-lua").grep({
