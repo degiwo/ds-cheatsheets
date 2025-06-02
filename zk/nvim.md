@@ -251,6 +251,10 @@ vim.opt.number = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 
+local map = vim.keymap.set
+map("n", "gd", vim.lsp.buf.definition)
+map("n", "gr", vim.lsp.buf.references)
+
 vim.api.nvim_create_user_command("ZkFind", function()
 	require("fzf-lua").grep({
 		search = "",
