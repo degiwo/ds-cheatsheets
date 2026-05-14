@@ -8,3 +8,11 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 # add zsh-autosuggestions to plugins in ~/.zshrc
 ```
 
+## zsh-syntax-highlighting
+https://github.com/zsh-users/zsh-syntax-highlighting
+
+```bash
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+# add zsh-syntax-highlighting to plugins in ~/.zshrc (at last position)
+```
+
