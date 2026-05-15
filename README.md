@@ -37,3 +37,10 @@ sudo apt install tmux
 sudo apt install neovim
 ```
 
+6. zk CLI, see https://github.com/zk-org/zk
+```bash
+curl -LO https://github.com/zk-org/zk/releases/download/v0.15.4/zk-v0.15.4-linux-amd64.tar.gz
+tar -xzf zk-v0.15.4-linux-amd64.tar.gz
+chmod -x zk /usr/local/bin/
+```
+
