@@ -40,6 +40,8 @@ sudo apt install neovim
 6. fzf, see https://github.com/junegunn/fzf
 ```bash
 sudo apt install fzf
+echo 'source /usr/share/doc/fzf/examples/key-bindings.zsh' >> ~/.zshrc
+echo 'source /usr/share/doc/fzf/examples/completion.zsh' >> ~/.zshrc
 ```
 
 7. zk CLI, see https://github.com/zk-org/zk
