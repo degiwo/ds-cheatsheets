@@ -100,5 +100,21 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="nvim ~/.zshrc"
+# alias zshconfig="nvim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# fzf keybinds
+source /usr/share/doc/fzf/examples/key-bindings.zsh
+source /usr/share/doc/fzf/examples/completion.zsh
+
+# fzf aliases
+nvf() {
+	local file
+	file=$(find . -type f | fzf)
+
+	[[ -n "$file" ]] && nvim "$file"
+}
+cdf() {
+	cd $(find . -type d | fzf)
+}
+
